@@ -8,7 +8,7 @@ Satu notebook untuk seluruh alur:
 
 1. Prepare  
 2. EDA  
-3–5. Train/eval multi-seed (E0, E1a/b/c, E3)  
+3–5. **Inti model & setup** (YAML, `models.py`, dimensi/parameter, hard/soft/loss) lalu train/eval multi-seed opsional (E0, E1a/b/c, E3)  
 6. Remaining (E2, E4, E5)  
 7. Agregasi compare  
 8. Bootstrap CI  
@@ -16,6 +16,7 @@ Satu notebook untuk seluruh alur:
 10. Efficiency  
 11. Ekspor & tampilkan figur  
 
+Step 3–5 mencantumkan **seluruh kode inti** (`src/discourse/*` + YAML) sebagai **komentar penuh** agar terlihat saat scroll/video, tanpa dieksekusi ulang dari cell tersebut. Cell demo (dimensi/loss) dan train opsional tetap aktif via flag.  
 Atur flag di sel konfigurasi, lalu **Run All**.
 
 ### Mode cepat setelah clone (default disarankan)
