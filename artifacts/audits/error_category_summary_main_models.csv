@@ -1,0 +1,9 @@
+file,n,top_categories,reviewer
+E1c_indobertweet_seed42_pol_confident_errors.csv,50,"negation=36%, other=22%, group_mention_only=20%",Achmad
+E1c_indobertweet_seed42_tox_confident_errors.csv,50,"negation=32%, group_mention_only=24%, other=18%",Achmad
+E2_stl_seed42_pol_confident_errors.csv,50,"group_mention_only=30%, other=28%, negation=26%",Achmad
+E2_stl_seed42_tox_confident_errors.csv,50,"group_mention_only=28%, negation=28%, other=20%",Achmad
+E3_soft_mtl_seed42_pol_confident_errors.csv,50,"group_mention_only=34%, other=26%, negation=22%",Achmad
+E3_soft_mtl_seed42_tox_confident_errors.csv,50,"negation=38%, group_mention_only=20%, annotator_ambiguity=18%",Achmad
+E4_consistency_seed42_pol_confident_errors.csv,50,"group_mention_only=32%, negation=26%, other=26%",Achmad
+E4_consistency_seed42_tox_confident_errors.csv,50,"negation=38%, group_mention_only=20%, annotator_ambiguity=18%",Achmad

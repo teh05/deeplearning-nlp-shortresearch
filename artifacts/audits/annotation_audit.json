@@ -1,0 +1,9 @@
+{
+  "n_rows": 28448,
+  "empty_text": 0,
+  "bad_toxicity": 0,
+  "bad_polarization": 0,
+  "annotator_length_mismatch": 0,
+  "n_issue_rows": 0,
+  "issues_sample": []
+}

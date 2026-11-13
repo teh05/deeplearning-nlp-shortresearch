@@ -1,0 +1,24 @@
+flowchart TD
+  R[Pertanyaan riset IndoDiscourse<br/>toksisitas + polarisasi] --> A[Arsitektur]
+  R --> B[Agregasi task]
+  R --> C[Agregasi label]
+  R --> D[Robustness]
+  R --> E[Preprocessing]
+
+  A --> A1[TF-IDF+LR<br/>baseline linear]
+  A --> A2[TextCNN<br/>Kim, 2014]
+  A --> A3[BiLSTM-Attention<br/>sekuens]
+  A --> A4[IndoBERTweet<br/>Koto et al., 2021]
+
+  B --> B1[STL matched<br/>uji negative transfer]
+  B --> B2[MTL hard<br/>Caruana, 1997; Ruder, 2017]
+
+  C --> C1[Hard majority]
+  C --> C2[Soft proporsi anotator<br/>Peterson et al., 2019;<br/>Uma et al., 2021]
+
+  D --> D1[Tanpa consistency]
+  D --> D2[Consistency w=0.5<br/>pada perturbasi mild]
+
+  E --> E1[P0 NFC+whitespace]
+  E --> E2[P1 URL/mention token]
+  E --> E3[P2 + slang konservatif]

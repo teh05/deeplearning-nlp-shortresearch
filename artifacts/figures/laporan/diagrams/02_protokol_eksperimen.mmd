@@ -1,0 +1,34 @@
+flowchart LR
+  subgraph Config["Konfigurasi tetap"]
+    C1[Model + hyperparameter<br/>dari configs/*.yaml]
+    C2[Split beku group-hash]
+    C3[Preprocess P0/P1/P2]
+  end
+
+  subgraph Seeds["Ulang pelatihan 3 seed"]
+    S1[Seed 42]
+    S2[Seed 43]
+    S3[Seed 44]
+  end
+
+  subgraph Eval["Evaluasi per seed"]
+    V[Pilih threshold di validation]
+    T[Prediksi test]
+    M[Metrik hard + soft + kalibrasi]
+  end
+
+  subgraph Stats["Statistik laporan"]
+    A[Mean ± std antar seed]
+    B[Paired bootstrap CI<br/>unit = text_id test]
+  end
+
+  C1 --> S1 --> V --> T --> M
+  C1 --> S2 --> V
+  C1 --> S3 --> V
+  C2 --> S1
+  C2 --> S2
+  C2 --> S3
+  C3 --> S1
+  C3 --> S2
+  C3 --> S3
+  M --> A --> B

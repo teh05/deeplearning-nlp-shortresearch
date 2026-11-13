@@ -1,0 +1,17 @@
+flowchart TD
+  P42[Prediksi test seed 42] --> M42[Metrik per task]
+  P43[Prediksi test seed 43] --> M43[Metrik per task]
+  P44[Prediksi test seed 44] --> M44[Metrik per task]
+  M42 --> AGG[Mean ± std antar seed]
+  M43 --> AGG
+  M44 --> AGG
+  P42 --> BOOT[Paired bootstrap CI<br/>resample text_id]
+  P43 --> BOOT
+  P44 --> BOOT
+  AGG --> REP[Pelaporan klaim RM/H]
+  BOOT --> REP
+  AUD[Audit manusia<br/>preprocess/perturb/error] --> REP
+
+  note1[Catatan: seed mengukur<br/>variasi pelatihan;<br/>bootstrap mengukur<br/>variasi sampel teks]
+  AGG -.-> note1
+  BOOT -.-> note1

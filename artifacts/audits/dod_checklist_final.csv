@@ -1,0 +1,12 @@
+item,status
+Dataset+checksum+schema+split,selesai
+EDA aktual,selesai
+E0-E5 train 3 seed,selesai
+Aggregate mean±std + bootstrap CI,selesai
+Robustness perturbed eval,selesai
+Temperature scaling + efficiency,selesai
+Audit manusia preprocess/perturb/error,selesai
+Nama gambar distandarisasi (folder laporan),selesai
+Laporan Word v4 + audit + H1/H5 update,selesai
+Sitasi PDF metadata verifikasi penuh,opsional
+E3-common vs expanded,opsional

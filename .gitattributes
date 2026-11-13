@@ -1,0 +1,2 @@
+IndoDiscourse/indotoxic2024_annotated_data_v2_final.csv !text !filter !merge !diff
+IndoDiscourse/indotoxic2024_annotated_data_v2_final.jsonl !text !filter !merge !diff

@@ -1,0 +1,19 @@
+flowchart TD
+  A[Dataset IndoDiscourse<br/>Susanto et al., 2025] --> B[Audit skema & anotasi]
+  B --> C[EDA distribusi label<br/>disagreement & fitur permukaan]
+  C --> D[Group-hash split 70/15/15<br/>seed split = 42]
+  D --> E[Preprocessing P0 default<br/>ablasi P1/P2]
+  E --> F[Training multi-seed 42/43/44]
+  F --> G[Validasi: pilih threshold<br/>macro-F1]
+  G --> H[Evaluasi test:<br/>F1/AP + soft MSE/CE + ECE/Brier]
+  H --> I[Robustness perturbasi ringan]
+  I --> J[Audit manusia<br/>preprocess / perturb / error]
+  J --> K[Aggregate mean±std<br/>+ paired bootstrap CI]
+  K --> L[Laporan FINAL ber-sitasi APA 7]
+
+  classDef data fill:#E8F1FB,stroke:#4C78A8;
+  classDef model fill:#FFF3E0,stroke:#F58518;
+  classDef eval fill:#E8F5E9,stroke:#54A24B;
+  class A,B,C,D,E data;
+  class F,G model;
+  class H,I,J,K,L eval;

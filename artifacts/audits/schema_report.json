@@ -1,0 +1,31 @@
+{
+  "n_raw_rows": 28448,
+  "n_mapped_rows": 28448,
+  "raw_columns": [
+    "text_id",
+    "annotators_id",
+    "text",
+    "initial_paragraph",
+    "topic",
+    "is_noise_or_spam_text",
+    "related_to_election_2024",
+    "toxicity",
+    "polarized",
+    "profanity_obscenity",
+    "threat_incitement_to_violence",
+    "insults",
+    "identity_attack",
+    "sexually_explicit"
+  ],
+  "mapped_columns": [
+    "source_ids",
+    "text_raw",
+    "votes_tox",
+    "votes_pol",
+    "annotators_id",
+    "topic",
+    "initial_paragraph"
+  ],
+  "empty_text": 0,
+  "null_text": 1
+}

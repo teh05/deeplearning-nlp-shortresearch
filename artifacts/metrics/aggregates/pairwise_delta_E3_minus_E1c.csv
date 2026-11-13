@@ -1,0 +1,13 @@
+comparison,model_a,model_b,task,metric,mean_delta,std_delta,n_seeds,seeds
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,tox,macro_f1,-0.0010629154424175447,0.01179908335681531,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,tox,mse,-0.009376821193969431,0.005210585784417043,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,tox,cross_entropy,-0.13242554857432323,0.06960806332577833,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,tox,ece,-0.014522657161265698,0.0142978724717208,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,tox,brier,-0.004129205038944134,0.004761469690011744,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,tox,average_precision,-0.00024574832750323683,0.018870297465563804,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,pol,macro_f1,-0.008136568314782414,0.010383188354527543,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,pol,mse,-0.0114433733439305,0.007838366113633663,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,pol,cross_entropy,-0.09286426636466565,0.05694555182493213,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,pol,ece,-0.014902451918985366,0.0045021024159216,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,pol,brier,-0.004542716193825129,0.005184832565903442,3,42;43;44
+E3_minus_E1c,E1c_indobertweet,E3_soft_mtl,pol,average_precision,0.005435490144881132,0.008856490229419284,3,42;43;44

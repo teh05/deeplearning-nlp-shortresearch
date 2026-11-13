@@ -1,0 +1,18 @@
+experiment_id: E1c_indobertweet
+seed: 42
+model:
+  name: transformer
+  checkpoint: indolem/indobertweet-base-uncased
+training:
+  max_length: 128
+  micro_batch_size: 8
+  gradient_accumulation: 2
+  learning_rate: 0.00002
+  weight_decay: 0.01
+  epochs: 3
+  gradient_clip: 1.0
+  precision: fp32
+  target_mode: hard
+  consistency_weight: 0.0
+selection:
+  metric: validation_mean_macro_f1

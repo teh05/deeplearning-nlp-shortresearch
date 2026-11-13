@@ -1,0 +1,49 @@
+# Python / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+
+# Local env / IDE
+.env
+.venv/
+venv/
+.cursor/
+.idea/
+*.swp
+
+# Large training artifacts (do not push)
+artifacts/checkpoints/
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.ckpt
+logs/
+
+# Duplicate raw copy (source of truth: IndoDiscourse/)
+data/raw/
+
+# Local-only folders (not part of the shared research package)
+scripts/
+demo/
+colab/
+report/
+referensi-jurnal/
+referense/
+template/
+requirements-colab.txt
+
+# Optional heavy error dumps / backups
+artifacts/audits/**/*_all_predictions_errors.csv
+artifacts/audits/**/*.bak
+**/*.bak
+
+# Local patch helpers
+_patch_*.py
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

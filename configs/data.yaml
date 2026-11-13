@@ -1,0 +1,27 @@
+dataset:
+  repo: Exqrch/IndoDiscourse
+  revision: null
+  local_path: IndoDiscourse/indotoxic2024_annotated_data_v2_final.jsonl
+columns:
+  text_id: text_id
+  text: text
+  toxicity: toxicity
+  polarization: polarized
+  annotators: annotators_id
+split:
+  seed: 42
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+preprocessing:
+  pipeline: P0
+  slang_dictionary: null
+device: cuda
+paths:
+  figures: artifacts/figures
+  metrics: artifacts/metrics
+  tables: artifacts/tables
+  predictions: artifacts/predictions
+  checkpoints: artifacts/checkpoints
+  audits: artifacts/audits
+  splits: data/splits

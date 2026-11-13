@@ -1,0 +1,19 @@
+experiment_id: E1b_bilstm
+seed: 42
+model:
+  name: bilstm
+  dim: 128
+  hidden: 128
+training:
+  max_length: 128
+  micro_batch_size: 64
+  gradient_accumulation: 1
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  epochs: 5
+  gradient_clip: 1.0
+  precision: fp32
+  target_mode: hard
+  consistency_weight: 0.0
+selection:
+  metric: validation_mean_macro_f1

@@ -1,0 +1,12 @@
+{
+  "n_train": 19897,
+  "n_validation": 4287,
+  "n_test": 4264,
+  "paths": {
+    "train": "E:\\Work-Project\\deep-learning-nlp\\data\\splits\\train.parquet",
+    "validation": "E:\\Work-Project\\deep-learning-nlp\\data\\splits\\validation.parquet",
+    "test": "E:\\Work-Project\\deep-learning-nlp\\data\\splits\\test.parquet"
+  },
+  "split_ids_csv": "E:\\Work-Project\\deep-learning-nlp\\data\\splits\\split_ids.csv",
+  "split_ids_sha256": "4e6a7506ef1dc91628d20f57cd95323d8a6c5d83c8eb9dc84d474fca6c2982bf"
+}

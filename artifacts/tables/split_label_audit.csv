@@ -1,0 +1,4 @@
+split,n,n_groups,tox_pos,tox_neg,tox_tie_or_missing,pol_pos,pol_neg,pol_tie_or_missing
+train,19897,18310,1519,17075,1303,2665,15302,1930
+validation,4287,3924,323,3689,275,567,3313,407
+test,4264,3924,314,3689,261,579,3291,394
